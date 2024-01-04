@@ -20,7 +20,11 @@ my_events_button = KeyboardButton("\U0001F5D3 Мои мероприятия")
 help_button = KeyboardButton("\U00002754 Помощь")
 
 main_menu_keyboard = ReplyKeyboardMarkup(resize_keyboard=True).add(
-    my_profile_button, my_events_button, help_button
+    my_profile_button
+).add(
+    my_events_button
+).add(
+    help_button
 )
 
 @dp.message_handler(commands=['start'])
