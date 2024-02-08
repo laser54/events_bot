@@ -13,7 +13,7 @@ COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the bot script into the container
-COPY bot.py /app/
+COPY main.py /app/
 # COPY .env /app/
 
-CMD ["python", "/app/bot.py"]
+CMD ["python", "/app/main.py"]
