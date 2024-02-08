@@ -30,7 +30,7 @@ jobs:
           tags: la5er/events_bot:latest
 
       - name: Deploy to VPS
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v0.1.4
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
