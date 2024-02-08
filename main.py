@@ -12,7 +12,7 @@ from aiogram.utils.markdown import hbold
 
 load_dotenv()
 
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 dp = Dispatcher()
 
